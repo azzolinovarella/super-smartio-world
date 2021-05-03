@@ -1,10 +1,12 @@
 import os
 import pickle
 import sys
-import utils as ut
 import retro  # pip install gym-retro
 import neat  # pip install neat-python
 import cv2  # pip install opencv-python
+import fornecidos_pelo_professor.utils as ut
+import fornecidos_pelo_professor.rominfo as ri
+
 
 full_path = os.path.dirname(__file__) 
 op_sys = os.name

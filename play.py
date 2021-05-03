@@ -3,11 +3,12 @@ import pickle
 import time
 import sys
 import gzip
-import utils as ut
 import retro  # pip install gym-retro
 import neat  # pip install neat-python
 import numpy as np  # pip install numpy
 from colorama import Fore, init  # pip install colorama
+import fornecidos_pelo_professor.utils as ut
+import fornecidos_pelo_professor.rominfo as ri
 
 init(autoreset=True)  # Iniciando colorama  --> vamos imprimir o que o mario ve em Cores
 full_path = os.path.dirname(__file__)  # -> Pega o path até aqui

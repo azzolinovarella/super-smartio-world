@@ -2,10 +2,11 @@ import os
 import sys
 import pickle
 import datetime as dt
-import utils as ut
 import retro  # pip install gym-retro
 import neat  # pip install neat-python
 import plot_evolution as plte
+import fornecidos_pelo_professor.utils as ut
+import fornecidos_pelo_professor.rominfo as ri
 
 
 full_path = os.path.dirname(__file__)  # -> Pega o path até aqui
