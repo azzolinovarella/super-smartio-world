@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ````
 Onde X em "pythonX" representa a sua versão (em nosso caso é 3.8 e, portanto, usaremos "python3.8").
 
-4) Agradeço ao Prof. Dr. Fabrício Olivetti de França pela autorização no uso dos módulos [rominfo.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/fornecidos_pelo_professor/rominfo.py) e [utils.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/fornecidos_pelo_professor/utils.py), escritos e disponibilizados por ele (folivetti@ufabc.edu).
+4) Agradeço ao Prof. Dr. Fabrício Olivetti de França pela autorização no uso dos módulos [rominfo.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/fornecidos_pelo_professor/rominfo.py) e [utils.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/fornecidos_pelo_professor/utils.py), escritos e disponibilizados por ele (folivetti@ufabc.edu).
 <br><br>
 
 
@@ -42,13 +42,13 @@ Onde "NOME_DO_MODULO" pode assumir os valores de [train](https://github.com/azzo
 
 A partir do uso da biblioteca externa [NEAT-Python](https://neat-python.readthedocs.io/), buscou-se fazer uso do algoritmo conhecido por NEAT (*NeuroEvolution of Augmenting Topologies*) para criar o um agente inteligente capaz de jogar a fase *YoshiIsland2* do jogo *Super Mario World*. Esse algoritmo parte do conceito conhecido por Neuroevolução, buscando evoluir redes neurais artificiais utilizando algoritmos genéticos até encontramos a topologia desejada (i.e., em nosso caso é aquela que capacita  um agente a terminar a fase *YoshiIsland2*).
 
-Para este projeto foi necessário criar um [arquivo de configuração](https://github.com/azzolinovarella/super-smartio-world/blob/main/config.txt) (exigido pela biblioteca [NEAT-Python](https://neat-python.readthedocs.io/)), responsável por indicar os argumentos utilizados pelo algoritmo. Ressalta-se que alguns parâmetros receberam valores default (encontrados na [documentação da biblioteca](https://neat-python.readthedocs.io/en/latest/config_file.html)) enquanto outros como a quantidade de neurônios nas camadas de entrada, saída e ocultas ("num_inputs", "num_outputs" e "num_hidden" respectivamente), função de ativação ("activation_default"), tamanho da população ("pop_size"), quantidades de indivíduos preservados por geração ("elitism"), porcentagem de individuos que irão se reproduzir ("survival_threshold") e etc., foram modificados por tentativa e erro e baseando-se em literaturas (contidas nas [referências](https://github.com/azzolinovarella/super-smartio-world#refer%C3%AAncias)).
+Para este projeto foi necessário criar um [arquivo de configuração](https://github.com/azzolinovarella/super-smartio-world/blob/master/config.txt) (exigido pela biblioteca [NEAT-Python](https://neat-python.readthedocs.io/)), responsável por indicar os argumentos utilizados pelo algoritmo. Ressalta-se que alguns parâmetros receberam valores default (encontrados na [documentação da biblioteca](https://neat-python.readthedocs.io/en/latest/config_file.html)) enquanto outros como a quantidade de neurônios nas camadas de entrada, saída e ocultas ("num_inputs", "num_outputs" e "num_hidden" respectivamente), função de ativação ("activation_default"), tamanho da população ("pop_size"), quantidades de indivíduos preservados por geração ("elitism"), porcentagem de individuos que irão se reproduzir ("survival_threshold") e etc., foram modificados por tentativa e erro e baseando-se em literaturas (contidas nas [referências](https://github.com/azzolinovarella/super-smartio-world#refer%C3%AAncias)).
 
 Por fim, destaca-se que esse projeto foi dividido em 4 módulos: [train.py](https://github.com/azzolinovarella/super-smartio-world#m%C3%B3dulo-trainpy), [play.py](https://github.com/azzolinovarella/super-smartio-world#m%C3%B3dulo-playpy), [plot_evolution.py](https://github.com/azzolinovarella/super-smartio-world#m%C3%B3dulo-plot_evolutionpy) e [generate_video.py](https://github.com/azzolinovarella/super-smartio-world#m%C3%B3dulo-generate_videopy) que, simplificadamente, são utilizados para treinar nossos agentes, utilizar um conjunto de indivíduos já treinados para jogarem a fase selecionada, validar a evolução de forma gráfica e gerar um vídeo do melhor agente até o momento jogando uma fase selecionada (respectivamente). Abaixo encontram-se explicações mais detalhadas sobre cada módulo. 
 <br><br>
 
 
-### *Módulo [train.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/train.py)*
+### *Módulo [train.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/train.py)*
 Este módulo tem como objetivo treinar os agentes salvando sempre o melhor.
 
 #### <u>Instruções de execução</u>:
@@ -74,7 +74,7 @@ Em ambos os casos, quando executamos esse módulo informações sobre a geraçã
 <br><br>
 
 
-### *Módulo [play.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/play.py)*
+### *Módulo [play.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/play.py)*
 Este módulo tem como objetivo fazer com que um conjunto de indivíduos joguem a fase desejada.
 
 #### <u>Instruções de execução</u>:
@@ -108,7 +108,7 @@ Note que a fase selecionada é, por padrão, "YoshiIsland2", fase em que o agent
 <br><br>
 
 
-### *Módulo [plot_evolution.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/plot_evolution.py)*
+### *Módulo [plot_evolution.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/plot_evolution.py)*
 Este módulo tem como objetivo plotar o fitness máximo por geração para verificar graficamente a neuroevolução.
 
 #### <u>Instruções de execução</u>:
@@ -136,7 +136,7 @@ Abaixo encontra-se o último gráfico gerado:<br><br>
 <br>  <!-- Coloquei só um porque aqui no VSCode o gráfico já da um espação --> 
 
 
-### *Módulo [generate_video.py](https://github.com/azzolinovarella/super-smartio-world/blob/main/generate_video.py)*
+### *Módulo [generate_video.py](https://github.com/azzolinovarella/super-smartio-world/blob/master/generate_video.py)*
 Este módulo tem como objetivo gerar um vídeo ".mp4" para o melhor agente treinado até o momento jogando uma determinado fase. 
 
 #### <u>Instruções de execução</u>:
