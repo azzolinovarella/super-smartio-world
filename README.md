@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como projeto final da disciplina "Inteligência Artificial" ministrada pelo Prof. Dr. Fabrício Olivetti de França, no primeiro quadrimestre de 2020 (2020.1) na Universidade Federal do ABC (UFABC).
 
-<br><br>
+<br>
 
 ## **Considerações iniciais**
 

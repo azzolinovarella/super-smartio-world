@@ -36,16 +36,83 @@
 							<!-- Nome do Projeto -->  
 							<h2>Projeto super-smartio-world</h2>
 						</header>
-						<!-- Descrição do Projeto -->
-						<h3> Em desenvolvimento ! </h3>
-						<code>teste</code>
-						<h4>Descrição do projeto...</h4>	
+						<h4>
+							<ul>
+								<li>
+									<a href="#informacoes-sumarizadas">Informações Sumarizadas</a>
+								</li><li>
+									<a href="#explicacao-geral-do-projeto">Explicação Geral do Projeto</a>
+								</li>
+							</ul>
+						</h4>
 					</section>
 				
+				<!-- Parte 2: Informações do Projeto Sumarizadas -->
+					<section id="two">
+						<a id="informacoes-sumarizadas"><h3>Informações Sumarizadas</h3></a>
+						<h4> 
+							<ul>
+								<li>
+									<u>Linguagem</u>: Python 3.8.5
+								</li><li>
+									<u>Palavras Chave</u>: Python; Inteligência Artificial; Aprendizado de Máquina; 
+									Algoritmos Genéticos; Neuroevolução; NEAT; NEAT-Python; Super Mario World.
+								</li><li style="text-align: left;">   <!-- Mudamos aqui para que não fique "Esticado" -->
+									<u>Link do Projeto</u>: <a href="https://github.com/azzolinovarella/super-smartio-world">https://github.com/azzolinovarella/super-smartio-world</a>
+								</li>
+							</ul>
+						</h4>
+					</section>
 				
+				<!-- Parte 3: Consderações Iniciais -->
+					<section id="three">
+						<a id="explicacao-geral-do-projeto"><h3>Explicação Geral do Projeto</h3></a>
+						<h4>
+							<p>A partir do uso da biblioteca externa NEAT-Python, buscou-se fazer uso do algoritmo 
+							conhecido por NEAT (NeuroEvolution of Augmenting Topologies) para criar o um agente 
+							inteligente capaz de jogar a fase YoshiIsland2 do jogo Super Mario World. Esse algoritmo 
+							parte do conceito conhecido por Neuroevolução, buscando evoluir redes neurais artificiais 
+							utilizando algoritmos genéticos até encontramos a topologia desejada (i.e., em nosso caso 
+							é aquela que capacita um agente a terminar a fase YoshiIsland2).</p>
 
-				<!-- Parte 7: Informações úteis -->
-					<section id="seven">
+							<p>Para este projeto foi necessário criar um arquivo de configuração (exigido pela biblioteca 
+							NEAT-Python), responsável por indicar os argumentos utilizados pelo algoritmo. Ressalta-se 
+							que alguns parâmetros receberam valores default (encontrados na documentação da biblioteca) 
+							enquanto outros como a quantidade de neurônios nas camadas de entrada, saída e ocultas 
+							("num_inputs", "num_outputs" e "num_hidden" respectivamente), função de ativação 
+							("activation_default"), tamanho da população ("pop_size"), quantidades de indivíduos 
+							preservados por geração ("elitism"), porcentagem de individuos que irão se reproduzir 
+							("survival_threshold") e etc., foram modificados por tentativa e erro e baseando-se em 
+							literaturas (contidas nas referências dentro do README do projeto).</p>
+
+							<p>Por fim, destaca-se que esse projeto foi dividido em 4 módulos: 
+								<li>
+									train.py: Treina um grupo de agentes para jogar a fase YoshiIsland2, 
+									salvando sempre o melhor para que possa ser usado posteriormente. 
+								</li><li>
+									play.py: Faze com que um individuo ou um grupo de agentes jogue a fase 
+									selecionada que, por padrão, é a YoshiIsland2.
+								</li><li>
+									plot_evolution.py: Valida de forma gráfica a evolução, gerando
+									um gráfico de fitness máximo por geração e o salvando em um arquivo
+									de foto.
+								</li><li>
+									generate_video.py: Cria um vídeo MP4 do melhor agente jogando a
+									fase selecionada que, por padrão, é a YoshiIsland2.
+								</li>
+							</p>
+
+							<p>Informações detalhadas sobre cada módulo bem como instruções de execução, 
+							podem ser encontradas no README do projeto:<br><br>
+							<a href="https://github.com/azzolinovarella/super-smartio-world/blob/master/README.md">
+							<h4 style="text-align: center;">https://github.com/azzolinovarella/super-smartio-world/blob/master/README.md</h4></a>							
+							</p>
+						</h4>
+					</section>
+				
+				<!-- TODO -->
+				<!-- Parte N: Informações úteis -->
+					<section id="N">
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<a id="entre-em-contato"></a>
