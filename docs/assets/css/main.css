@@ -2633,6 +2633,7 @@ input, select, textarea {
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
+			text-align: inherit;
 		}
 
 		#header h1 {
