@@ -47,6 +47,8 @@
 									<a href="#informacoes-sumarizadas">Informações Sumarizadas</a>
 								</li><li>
 									<a href="#explicacao-geral-do-projeto">Explicação Geral do Projeto</a>
+								</li><li>
+									<a href="https://azzolinovarella.github.io">Voltar para Página Principal</a>
 								</li>
 							</ul>
 						</h4>
@@ -72,15 +74,15 @@
 				<!-- Parte 3: Consderações Iniciais -->
 					<section id="three">
 						<a id="explicacao-geral-do-projeto"><h3>Explicação Geral do Projeto</h3></a>
-						<h4>
-							<p>A partir do uso da biblioteca externa NEAT-Python, buscou-se fazer uso do algoritmo 
+						<h4><p>
+							A partir do uso da biblioteca externa NEAT-Python, buscou-se fazer uso do algoritmo 
 							conhecido por NEAT (NeuroEvolution of Augmenting Topologies) para criar o um agente 
 							inteligente capaz de jogar a fase YoshiIsland2 do jogo Super Mario World. Esse algoritmo 
 							parte do conceito conhecido por Neuroevolução, buscando evoluir redes neurais artificiais 
 							utilizando algoritmos genéticos até encontramos a topologia desejada (i.e., em nosso caso 
-							é aquela que capacita um agente a terminar a fase YoshiIsland2).</p>
-
-							<p>Para este projeto foi necessário criar um arquivo de configuração (exigido pela biblioteca 
+							é aquela que capacita um agente a terminar a fase YoshiIsland2).
+						</p><p>
+							Para este projeto foi necessário criar um arquivo de configuração (exigido pela biblioteca 
 							NEAT-Python), responsável por indicar os argumentos utilizados pelo algoritmo. Ressalta-se 
 							que alguns parâmetros receberam valores default (encontrados na documentação da biblioteca) 
 							enquanto outros como a quantidade de neurônios nas camadas de entrada, saída e ocultas 
@@ -90,7 +92,8 @@
 							("survival_threshold") e etc., foram modificados por tentativa e erro e baseando-se em 
 							literaturas (contidas nas referências dentro do README do projeto).</p>
 
-							<p>Por fim, destaca-se que esse projeto foi dividido em 4 módulos: 
+						<p>Por fim, destaca-se que esse projeto foi dividido em 4 módulos:
+							<ul> 
 								<li>
 									train.py: Treina um grupo de agentes para jogar a fase YoshiIsland2, 
 									salvando sempre o melhor para que possa ser usado posteriormente. 
@@ -105,9 +108,9 @@
 									generate_video.py: Cria um vídeo MP4 do melhor agente jogando a
 									fase selecionada que, por padrão, é a YoshiIsland2.
 								</li>
-							</p>
-
-							<p>Informações detalhadas sobre cada módulo bem como instruções de execução, 
+							</ul>
+						</p><p>
+							Informações detalhadas sobre cada módulo bem como instruções de execução, 
 							podem ser encontradas no README do projeto:<br><br>
 							<a href="https://github.com/azzolinovarella/super-smartio-world/blob/master/README.md">
 							<h4 style="text-align: center;">https://github.com/azzolinovarella/super-smartio-world/blob/master/README.md</h4></a>							
