@@ -1,7 +1,8 @@
 # Super Smartio World
 
 Este projeto foi desenvolvido como projeto final da disciplina "Inteligência Artificial" ministrada pelo Prof. Dr. Fabrício Olivetti de França, no primeiro quadrimestre de 2021 (2021.1) na Universidade Federal do ABC (UFABC).
-
+Abaixo encontra-se um vídeo explicativo deste projeto.
+(https://www.youtube.com/watch?v=8nyrC24q-QA&t=1s&ab_channel=FelipeAzzolino)[https://www.youtube.com/watch?v=8nyrC24q-QA&t=1s&ab_channel=FelipeAzzolino]
 <br>
 
 ## **Considerações iniciais**
